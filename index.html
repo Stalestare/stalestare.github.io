@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read & Reflect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Read & Reflect</h1>
+    <p>Upload your book, read it, and write your thoughts all in one place.</p>
+  </header>
+
+  <main id="app">
+    <section id="upload-area">
+      <label for="fileInput">Choose a book (.txt, .pdf, .epub):</label>
+      <input type="file" id="fileInput" accept=".txt,.pdf,.epub" />
+    </section>
+
+    <section id="content-area">
+      <div id="reader">
+        <h2>Reader</h2>
+        <div id="bookViewer">
+          <p>Book content will appear here after upload...</p>
+        </div>
+      </div>
+
+      <div id="writer">
+        <h2>Your Notes</h2>
+        <textarea id="notes" placeholder="Write your thoughts here..."></textarea>
+        <button id="submitBtn">Submit Review</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Read & Reflect. Built by Ocean's wild mind.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="pdfjs/pdf.js"></script>
+  <script src="epubjs/epub.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
